@@ -138,8 +138,10 @@ AUTHENTICATION_BACKENDS = (
     'social.backends.google.GooglePlusAuth',
 )
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['https://www.googleapis.com/auth/plus.me'
-                                   'https://www.googleapis.com/auth/userinfo.profile']
+SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['https://www.googleapis.com/auth/plus.me',
+                                    'https://www.googleapis.com/auth/plus.login',
+                                   'https://www.googleapis.com/auth/userinfo.profile',
+                                   ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH_KEY = None
+SOCIAL_AUTH_GOOGLE_OAUTH_KEY = "407408718192.apps.googleusercontent.com"
 SOCIAL_AUTH_GOOGLE_OAUTH_SECRET = None

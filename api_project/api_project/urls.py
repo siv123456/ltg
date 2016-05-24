@@ -20,6 +20,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/v1/', include('rest_framework.urls', namespace='rest_framework')),
-    url('^api/v1/auth/$', include('social.apps.django_app.urls', namespace='social')),
-    url(r'', include('api_app.urls')),
+    url('^api/v1/auth/', include('social.apps.django_app.urls', namespace='social')),
+    url(r'^api/v1/', include('api_app.urls')),
 ]
